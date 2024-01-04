@@ -1,4 +1,9 @@
+import Device from "./Device.js";
+
 export default godirect;
+export type { default as Device } from "./Device.js";
+export type * from "./Sensor.js";
+
 declare namespace godirect {
     /**
     * This returns a Device instance
@@ -33,4 +38,3 @@ declare namespace godirect {
     */
     function selectDevice(bluetooth?: bool): Promise<any>;
 }
-import Device from "./Device.js";
